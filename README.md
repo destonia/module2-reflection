@@ -1,7 +1,9 @@
-# module2-reflection
-# Reflection 25/01/2021
+#### module2-reflection
+
+### Reflection 25/01/2021
+
 ```
-### Website động và website tĩnh
+## Website động và website tĩnh
 Website tĩnh là loại website cơ bản mà có thể tạo ra dễ dàng. 
 Bạn không cần sử dụng tới các ngôn ngữ lập trình web như Java, PHP, JSP … 
 hay thiết kế cơ sở dữ liệu để tạo ra website tĩnh. Những trang web của nó 
@@ -10,14 +12,16 @@ hay thiết kế cơ sở dữ liệu để tạo ra website tĩnh. Những tran
 Website động là tập hợp của những trang web mà nội dung có khả năng thay đổi. 
 Sự thay đổi có thể là tùy theo thời gian, tùy theo người dùng, tùy theo ngữ cảnh. 
 Website động có nội dung được lấy từ cơ sở dữ liệu hoặc hệ thống quản trị nội dung (CMS). 
-Do đó, khi bạn cập nhật nội dung của cơ sở dữ liệu hoặc CMS thì nội dung của trang web cũng thay đổi theo.
-Để tạo được website động, chúng ta thường sử dụng các ngôn ngữ lập trình phía server (server-side), như Java, PHP, Python, C#, v.v...
+Do đó, khi bạn cập nhật nội dung của cơ sở dữ liệu hoặc
+ CMS thì nội dung của trang web cũng thay đổi theo.
+Để tạo được website động, chúng ta thường sử dụng các 
+ngôn ngữ lập trình phía server (server-side), như Java, PHP, Python, C#, v.v...
 Website thường được đặt (hosting) trên một máy chủ dịch vụ web (Web Server).
-Website động sử dụng kết hợp ngôn ngữ lập trình phía máy khách (Client), máy chủ (Server) để tạo ra nội dung động.
-```
+Website động sử dụng kết hợp ngôn ngữ lập trình 
+phía máy khách (Client), máy chủ (Server) để tạo ra nội dung động.
 
-### LAMP
-```
+## LAMP
+
     Linux: Một họ các hệ điều hành (tương tự như Windows mà chúng ta thường thấy) mã nguồn mở (FOSS),
      thường được sử dụng để cài đặt cho các máy chủ trong các doanh nghiệp. 
      Gọi Linux là một "họ" là bởi vì có rất nhiều hệ điều hành Linux (bản phân phối), có thể kể đến như 
