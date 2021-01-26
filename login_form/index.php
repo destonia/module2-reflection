@@ -12,7 +12,7 @@
     }
 </style>
 <body>
-<form method="POST" action="welcome.php>
+<form method="POST">
     <div class="login">
         <h2>Login</h2>
         <input type="text" name="username" size="30"  placeholder="username" />
@@ -20,6 +20,19 @@
         <input type="submit" value="Sign in"/>
     </div>
 </form>
+<?php
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $userName=$_POST["username"];
+    $password=$_POST["password"];
+    if(($userName!=="admin")||($password!=="admin")){
+        echo ("Wrong user name or password") ;
+    }
+    else if($userName==='admin'&&$password=="admin"){
+        header("location: welcome.php");
+    }
+}
+
+?>
 </body>
 
 </html>
