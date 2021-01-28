@@ -3,10 +3,16 @@
 ### Reflection 28/01/2021
 ```
 Nên sử dụng JSON khi nào
-Đó là khi bạn muốn lưu trữ dữ liệu đơn thuần dưới dạng metadata ở phía server. Chuỗi JSON sẽ được lưu vào database và sau đó khi cần dữ liệu thì sẽ được giải mã. Ví dụ với PHP, nó cung cấp các hàm liên quan đến JSON để mã hóa hoặc giải mã là json_encode và json_decode.
+Đó là khi bạn muốn lưu trữ dữ liệu đơn thuần dưới dạng metadata ở phía server. 
+Chuỗi JSON sẽ được lưu vào database và sau đó khi cần dữ liệu thì sẽ được giải mã. 
+Ví dụ với PHP, nó cung cấp các hàm liên quan đến JSON 
+để mã hóa hoặc giải mã là json_encode và json_decode.
 
 Chuỗi JSON được bao lại bởi dấu ngoặc nhọn {}
-Các key, valuecủa JSON bắt buộc phải đặt trong dấu nháy kép {“}, nếu bạn đặt nó trong dấu nháy đơn thì đây không phải là một chuỗi JSON đúng chuẩn. Nếu trường hợp trong value của bạn có chứa dấu nháy kép " thì hãy dùng dấu (\) để đặt trước nó, ví dụ  \"json là gì\".
+Các key, valuecủa JSON bắt buộc phải đặt trong dấu nháy kép {“}, 
+nếu bạn đặt nó trong dấu nháy đơn thì đây không phải là một chuỗi JSON đúng chuẩn. 
+Nếu trường hợp trong value của bạn có chứa dấu 
+nháy kép " thì hãy dùng dấu (\) để đặt trước nó, ví dụ  \"json là gì\".
 Nếu có nhiều dữ liệu thì dùng dấu phẩy , để ngăn cách.
 
 public function __construct($pathFile)//đường dẫn đến file json.json
