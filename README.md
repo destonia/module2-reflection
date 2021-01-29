@@ -1,5 +1,110 @@
 #### module2-reflection
+### Reflection 29/01/2021
+```
+## Nạp chồng (Overloading): 
+Việc khai báo trong một lớp có nhiều thuộc tính, 
+nhiều phương thức có cùng tên nhưng với các tham số khác nhau 
+(khác kiểu dữ liệu, khác số lượng tham số) gọi là khai báo chồng phương thức 
+(overloading method). Khi được gọi, dựa vào tham số truyền vào, 
+phương thức tương ứng sẽ được thực hiện. 
+Hay ngắn gọn theo từng ý như phía dưới để các bạn dễ hiểu hơn.
 
+Các phương thức nằm trong cùng 1 lớp , có cùng tên với nhau nhưng
+ có danh sách đối số khác nhau được gọi là các phương thức nạp chồng.
+
+Hàm tạo cũng có thể được nạp chồng.
+
+Tùy theo ta gọi đối số thế nào mà nó sẽ gọi hàm tương ứng.
+
+## Ghi đè (Overriding): 
+Trong PHP, nếu như người lập trình tạo ra một phương thức trong lớp con có
+ trùng tên, cùng tham số, cùng kiểu trả về với một phương thức đã được tạo 
+ ở lớp cha thì đó được gọi là ghi đè phương thức(Method Overriding). 
+ Hoặc một cách dễ hiểu hơn như sau.
+
+Là Phương thức đã xuất hiện ở lớp cha và xuất hiện tiếp ở lớp con.
+
+Khi đối tượng thuộc lớp con gọi phương thức thì sẽ chọn lựa và chạy 
+theo phương thức trong lớp con.
+
+Khi dùng override, lúc thực thi, nếu lớp Con không có phương thức riêng,
+ phương thức của lớp Con được gọi. Nếu không có phương thức của lớp Cha sẽ được gọi.
+
+
+## Final class
+-Khi một class được khai báo là final thì không lớp nào có thể kế thừa nó và nó chỉ có thể khởi tạo được thôi.
+
+Cú pháp: Khai báo final class.
+
+final class ClassName
+{
+    //
+}
+VD: khai báo final class ConNguoi.
+
+final class ConNguoi
+{
+    //
+}
+VD: final class không thể kế thừa.
+
+final class ConNguoi
+{
+    //
+}
+//Sai vì không thể kế thừa final class
+class NguoiLon extends ConNguoi
+{
+
+}
+//Fatal error: Class NguoiLon may not inherit from final class (ConNguoi)
+## Final Phương thức
+-Khi chúng ta khai báo một phương thức là final thì không có một phương thức nào có thể override(ghi đè lại được).
+
+Cú pháp: khai báo một phương thức final.
+
+class ClassName
+{
+    final public function methodName()
+    {
+        //
+    }
+}
+VD: khai báo lớp con người có phương thức getSoChan() là final.
+
+class ConNguoi
+{
+    private $soChan = 2;
+
+    final public function getSoChan()
+    {
+        return $this->soChan;
+    }
+}
+VD: không thể override lại phương thức final.
+
+class ConNguoi
+{
+    private $soChan = 2;
+
+    final public function getSoChan()
+    {
+        return $this->soChan;
+    }
+}
+
+//Sai vì không thể override lại final phương thức
+class NguoiLon extends ConNguoi
+{
+    public function getSoChan()
+    {
+
+    }
+}
+//Fatal error: Cannot override final method ConNguoi::getSoChan()
+
+## PHP không cho phép nhiều construct trong 1 class.
+```
 ### Reflection 28/01/2021
 ```
 Nên sử dụng JSON khi nào
