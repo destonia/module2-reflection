@@ -1,4 +1,48 @@
 #### module2-reflection
+
+***
+# Reflection 1/2/2021.
+***
+#### 1.Abstract Class.
+> - Nó là một class có tính trừu tượng rất cao đến mức không thể tạo được các đối tượng ở lớp đó thì gọi là abstract class.
+> - Bắt buộc phải chứa abstract method và có thể có method thông thường.
+>> + abstract method là method chỉ có khai báo (tên và tham số đầu vào).
+> - Mức truy cập các abstract method phải ở public hoặc protected để lớp kế thừa có thể định nghĩa lại.
+> - Không dùng từ khóa final cho khai báo abstract class và abstract method.
+***
+#### 2. Interface.
+> - Có thể hiểu đây là một dạng bảng thiết kế cho chức năng mà bất kỳ Class nào cũng có thể có. Một interface chứa các hành vi mà một class triển khai.
+> - Interface không phải là một lớp đối tượng .
+> - Tất cả các hàm trong interface đều ở dạng khai báo và không được định nghĩa (giống lớp abstract).
+> - Interface không thể khởi tạo.
+***
+#### 3. Ưu điểm.
+> - Abstract class
+>> + Có thể linh động các method. giống như một class thông thường.
+>> + Các class extend có thể override hoặc không override các method thường.
+>
+> - Interface.
+>> + Có thể implements nhiều interface(tính đa hình).
+>> + Xây dựng được bộ khung mẫu mà các lớp phải follow theo.
+>> + Giúp quản lý tốt, nắm bắt được các chức năng phải có cho một đối tượng nào đó.
+***
+#### 4. Nhược điểm:
+> - Abstract class:
+>> + Không thể extend nhiều abstract class.
+>
+> - Interface:
+>> + Mỗi khi định nghĩa thêm tính năng, các class impelement nó đồng lọat phải thêm tính năng đó.
+***
+#### 5. Tại sao lại sử dụng abstract class và interface.
+> - Sử dụng abstract để tránh tình trạng khai báo nhiều lớp mà mỗi lớp có những thuộc tính và phương thức tương tự nhau.
+> - Sử dụng interface để giải quyết vấn đề đa kế thừa.
+> - Sử dụng abstract class và interface giúp dễ mở rộng ứng dụng cũng như bảo trì code.
+***
+### 6. Khi nào sử dụng.
+> - Khi một nhóm đối tượng có cùng bản chất kế thừa từ một class thì sử dụng abstract class.
+> - Khi một nhóm đối tượng không có cùng bản chất nhưng chúng có hành động giống nhau thì sử dụng interface.
+***
+
 ### Reflection 29/01/2021
 ```
 ## Nạp chồng (Overloading): 
