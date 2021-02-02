@@ -1,7 +1,13 @@
 #### module2-reflection
 ***
 # Reflection 2/2/2021
-### 1. Các cách thực hành clean code:
+### 1. SOLID
+> - S: Single responsibility principle
+>> + Một class chỉ nên giữ 1 trách nhiệm duy nhất (Chỉ có thể sửa đổi class với 1 lý do duy nhất).
+Càng về sau class sẽ càng phình to ra. Theo đúng nguyên lý, ta phải tách class này ra làm 3 class riêng. Tuy số lượng class nhiều hơn những việc sửa chữa sẽ đơn giản hơn, class ngắn hơn nên cũng ít bug hơn.
+>> + 
+
+### 2. Các cách thực hành clean code:
 > - Keep It Simple
 >>+ Mẹo đầu tiên và cơ bản nhất là giữ mã của bạn đơn giản và dễ đọc nhất có thể và không quá phức tạp vấn đề. Bằng cách giữ nó đơn giản, bạn có thể tạo mã chất lượng cao hơn, giải quyết vấn đề nhanh hơn, làm việc tốt hơn trong các nhóm phát triển và có một cơ sở mã linh hoạt hơn.
 > - Understand Your Code
