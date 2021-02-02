@@ -4,6 +4,7 @@
 ### 1. Các cách thực hành clean code:
 > Keep It Simple
 Mẹo đầu tiên và cơ bản nhất là giữ mã của bạn đơn giản và dễ đọc nhất có thể và không quá phức tạp vấn đề. Bằng cách giữ nó đơn giản, bạn có thể tạo mã chất lượng cao hơn, giải quyết vấn đề nhanh hơn, làm việc tốt hơn trong các nhóm phát triển và có một cơ sở mã linh hoạt hơn.
+fdsafd
 > Understand Your Code
 Là người mới bắt đầu, ngay cả khi bạn đang viết mã đơn giản có một câu lệnh ‘if else’ , hãy bắt đầu bằng cách nhận ra mã trên một mảnh giấy. Thuật toán và toàn bộ trình biên dịch sẽ có ý nghĩa hơn khi bạn hiểu ý tưởng đằng sau mã. Ngay cả đối với các chuyên gia, cách tốt nhất để giải quyết một vấn đề phức tạp hoặc xây dựng một thuật toán để giải quyết bất kỳ vấn đề phức tạp là phá vỡ nó thành các phần nhỏ và sau đó cố gắng xây dựng một giải pháp cho mỗi phần. clean code
 > Lắng nghe những nhận xét
