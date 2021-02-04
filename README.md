@@ -2,32 +2,32 @@
 
 ***
 # Reflection 4/2/2021
->-Cấu trúc dữ liệu ngăn xếp (Stack)
->>+Đặc điểm là làm cho ngăn xếp trở thành cấu trúc dữ liệu dạng LIFO. LIFO là viết tắt của Last-In-First-Out. Ở đây, phần tử được đặt vào (được chèn, được thêm vào) cuối cùng sẽ được truy cập đầu tiên.
->-Các hoạt động cơ bản trên cấu trúc dữ liệu ngăn xếp
->>+Hoạt động push(): lưu giữ một phần tử trên ngăn xếp.
->>+Hoạt động pop(): xóa một phần tử từ ngăn xếp.
->>+Hoạt động peek(): lấy phần tử dữ liệu ở trên cùng của ngăn xếp, mà không xóa phần tử này.
->>+Hoạt động isFull(): kiểm tra xem ngăn xếp đã đầy hay chưa.
->>+Hoạt động isEmpty(): kiểm tra xem ngăn xếp là trống hay không.
->-Cấu trúc dữ liệu hàng đợi (Queue)
->>+Một đầu luôn luôn được sử dụng để chèn dữ liệu vào (hay còn gọi là sắp vào hàng) và đầu kia được sử dụng để xóa dữ liệu (rời hàng). Cấu trúc dữ liệu hàng đợi tuân theo phương pháp First-In-First-Out, tức là dữ liệu được nhập vào đầu tiên sẽ được truy cập đầu tiên.
->-Các hoạt động cơ bản trên cấu trúc dữ liệu hàng đợi
->>+Hoạt động enqueue(): thêm (hay lưu trữ) một phần tử vào trong hàng đợi.
->>+Hoạt động dequeue(): xóa một phần tử từ hàng đợi.
->>+Phương thức peek(): lấy phần tử ở đầu hàng đợi, mà không xóa phần tử này.
->>+Phương thức isFull(): kiểm tra xem hàng đợi là đầy hay không.
->>+Phương thức isEmpty(): kiểm tra xem hàng đợi là trống hay hay không.
->-Cấu trúc cây (tree)
->>+Cấu trúc Tree hoạt động theo nguyên tắc phân cấp, trong đó có mối quan hệ cha-con giữa các nút (node). Node mà không có cha thì được gọi là root (nút gốc), node mà không có con thì được gọi là leaf (nút lá). Những node có chung cha thì được gọi là siblings (anh em). Khái niệm edges (cạnh) được dùng để chỉ đến đường kết nối giữa các node.
->-Thêm node vào trong Tree
->>+Đây là một cách triển khai đơn giản, theo chiến thuật "chia để trị"
->>+Tất cả những phần tử nhỏ hơn phần tử hiện tại thì chuyển sang bên trái, tất cả những phần tử lớn hơn thì chuyển sang bên phải, tất cả những phần tử trùng lặp (đã tồn tại trước đó) thì sẽ bị từ chối (không thêm vào)
+> - Cấu trúc dữ liệu ngăn xếp (Stack)
+>> + Đặc điểm là làm cho ngăn xếp trở thành cấu trúc dữ liệu dạng LIFO. LIFO là viết tắt của Last-In-First-Out. Ở đây, phần tử được đặt vào (được chèn, được thêm vào) cuối cùng sẽ được truy cập đầu tiên.
+> - Các hoạt động cơ bản trên cấu trúc dữ liệu ngăn xếp
+>> + Hoạt động push(): lưu giữ một phần tử trên ngăn xếp.
+>> + Hoạt động pop(): xóa một phần tử từ ngăn xếp.
+>> + Hoạt động peek(): lấy phần tử dữ liệu ở trên cùng của ngăn xếp, mà không xóa phần tử này.
+>> + Hoạt động isFull(): kiểm tra xem ngăn xếp đã đầy hay chưa.
+>> + Hoạt động isEmpty(): kiểm tra xem ngăn xếp là trống hay không.
+> - Cấu trúc dữ liệu hàng đợi (Queue)
+>> + Một đầu luôn luôn được sử dụng để chèn dữ liệu vào (hay còn gọi là sắp vào hàng) và đầu kia được sử dụng để xóa dữ liệu (rời hàng). Cấu trúc dữ liệu hàng đợi tuân theo phương pháp First-In-First-Out, tức là dữ liệu được nhập vào đầu tiên sẽ được truy cập đầu tiên.
+> - Các hoạt động cơ bản trên cấu trúc dữ liệu hàng đợi
+>> + Hoạt động enqueue(): thêm (hay lưu trữ) một phần tử vào trong hàng đợi.
+>> + Hoạt động dequeue(): xóa một phần tử từ hàng đợi.
+>> + Phương thức peek(): lấy phần tử ở đầu hàng đợi, mà không xóa phần tử này.
+>> + Phương thức isFull(): kiểm tra xem hàng đợi là đầy hay không.
+>> + Phương thức isEmpty(): kiểm tra xem hàng đợi là trống hay hay không.
+> - Cấu trúc cây (tree)
+>> + Cấu trúc Tree hoạt động theo nguyên tắc phân cấp, trong đó có mối quan hệ cha-con giữa các nút (node). Node mà không có cha thì được gọi là root (nút gốc), node mà không có con thì được gọi là leaf (nút lá). Những node có chung cha thì được gọi là siblings (anh em). Khái niệm edges (cạnh) được dùng để chỉ đến đường kết nối giữa các node.
+> - Thêm node vào trong Tree
+>> + Đây là một cách triển khai đơn giản, theo chiến thuật "chia để trị"
+>> + Tất cả những phần tử nhỏ hơn phần tử hiện tại thì chuyển sang bên trái, tất cả những phần tử lớn hơn thì chuyển sang bên phải, tất cả những phần tử trùng lặp (đã tồn tại trước đó) thì sẽ bị từ chối (không thêm vào)
 Duyệt qua các phần tử của tree
->>+pre-order - duyệt node hiện tại rồi sau đó sang cây bên trái và cây bên phải
->>+in-order (đối xứng) - duyệt bên trái trước, sau đó duyệt node hiện tại, rồi duyệt node bên phải
->>+post-order - duyệt bên trái trước, sau đó bên phải, rồi duyệt node hiện tại
->>+level-order (duyệt theo bề rộng) - duyệt node hiện tại, sau đó duyệt tất cả các node anh em (siblings), rồi chuyển sang duyệt những node ở level tiếp theo
+>> + pre-order - duyệt node hiện tại rồi sau đó sang cây bên trái và cây bên phải
+>> + in-order (đối xứng) - duyệt bên trái trước, sau đó duyệt node hiện tại, rồi duyệt node bên phải
+>> + post-order - duyệt bên trái trước, sau đó bên phải, rồi duyệt node hiện tại
+>> + level-order (duyệt theo bề rộng) - duyệt node hiện tại, sau đó duyệt tất cả các node anh em (siblings), rồi chuyển sang duyệt những node ở level tiếp theo
 
 ***
 # Reflection 3/2/2021
