@@ -1,5 +1,37 @@
 #### module2-reflection
-
+***
+# Ngày 5/2/2021
+-SPL là bộ thư viên chuẩn của PHP, nó gồm tập hợp các interface, abstract class nhằm giải quyết các bài toán phổ biên.
+>Các thành phần của SPL :
+>> - Predefined Constants là danh sách các hằng số :số pi, số E,...
+>> - Datastructures chứa danh sách các lớp co khả năng làm việc với cấu trúc, dữ liệu khác nhau LinkList, Stack, Queue, Heaps,...
+>> - Interator: Chứa các lớp cho phép có khả năng thực hiện các phép lặp để duyệt các cấu trúc khác nhau tùy vào cấu trúc dữ liệu.
+>> - Danh sách các Interface
+>> - Exception là danh sách điều khiển các lớp ngoại lệ
+>> - File Handling cung cấp các lớp làm việc với file trong hệ thống.
+>> - SPL Funtions cung cấp các hàm hỗ trợ cần thiết.
+>> - Miscellaneous Classes và Interface. 
+<br> <br>
+> -Các loại cấu trúc dữ liệu:
+> -PHP DATASTRUCTURES <br>
+> - SPL là bộ thư viện chuẩn của PHP.Cung cấp nhiều cấu trúc dữ liệu tiêu chuẩn để chúng ta có thể sử dụng ngay trong ứng dụng của mình.Các dữ liệu này được phân nhóm dựa vào các hình thức triển khai của chúng cũng như căn cứ vào cách sử dụng trong thực tê.
+> các cấu trúc dữ liệu trong SPL:
+>> - Doubly Linked List
+>> - Heaps
+>> - Arrays
+>> - Map
+> - DoublyLinkedList:
+>> - Là một danh sách liên kết đôi, các node được liên kết với nhau theo hai hướng.
+>> - PHP cung cấp sẵn các lớp SplDoublyLinkedList là SplStack và SplQueue
+> - HEAP là một dạng cấu trúc gần như Tree, trong đó mỗi node có giá trị lớn hơn hoặc bằng các node con của nó.
+>> -PHP cung cấp sẵn các lớp thuộc Heaps bao gồm SplHeap và SplPriorityQueue.Trong SplHeap có SplMaxHeap và SplMinHeap
+> - ARRAYS là cấu trúc dữ liệu trong đó lưu trữ các phần tử theo hình thức liên tiếp nhau , truy cập dựa theo chỉ số.
+>> - PHP cung cấp lớp có sẵn SplFixedArray
+>> - Lưu ý cấu trúc Arrays khác khái niệm mảng trong PHP.Mảng trong PHP được triển khai theo hình thức Hashtable có trật tự.
+> - MAP là cấu trúc dữ liệu trong đó các phần tử được quản lý theo cặp key-value.
+>> - PHP cung cấp lớp SplObjectStorage
+>> - Mảng trong PHP cũng có thể coi là cấu trúc Map.Trong đó key có kiểu dữ liệu là int hoặc string.
+***
 ***
 # Reflection 4/2/2021
 > - Cấu trúc dữ liệu ngăn xếp (Stack)
